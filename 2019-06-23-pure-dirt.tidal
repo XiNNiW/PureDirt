@@ -1,0 +1,10 @@
+d1 $ ghost $ s "bd bd . sn" #pF "overdrive" (10*rand)
+
+d1 $ s "bd*8"
+
+
+d1 $ s "bd*32"
+
+setcps 1
+
+hush
