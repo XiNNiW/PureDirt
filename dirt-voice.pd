@@ -1,0 +1,16 @@
+#N canvas 535 231 814 705 10;
+#X obj 39 288 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 38 214 route s;
+#X obj 39 261 pipe;
+#X obj 39 236 list split 1;
+#X obj 39 320 outlet;
+#X obj 108 320 outlet;
+#X obj 39 190 r \$1;
+#X connect 0 0 4 0;
+#X connect 1 0 3 0;
+#X connect 1 1 5 0;
+#X connect 2 0 0 0;
+#X connect 3 0 2 0;
+#X connect 3 1 2 1;
+#X connect 6 0 1 0;

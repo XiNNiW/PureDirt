@@ -1,0 +1,10 @@
+#N canvas 0 100 892 860 10;
+#X msg 166 361 \$1 20;
+#X obj 166 380 line~;
+#X obj 166 316 inlet;
+#X obj 166 401 outlet~;
+#X obj 166 339 dirt-param \$1;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 2 0 4 0;
+#X connect 4 0 0 0;

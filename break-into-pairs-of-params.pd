@@ -1,0 +1,15 @@
+#N canvas 911 383 450 300 10;
+#X obj 108 97 inlet;
+#X obj 108 117 list split 2;
+#X obj 108 192 outlet;
+#N canvas 0 100 450 300 thru 0;
+#X obj 135 70 inlet;
+#X obj 135 89 outlet;
+#X connect 0 0 1 0;
+#X restore 162 163 pd thru;
+#X obj 108 136 list trim;
+#X connect 0 0 1 0;
+#X connect 1 0 4 0;
+#X connect 1 1 3 0;
+#X connect 3 0 1 0;
+#X connect 4 0 2 0;
