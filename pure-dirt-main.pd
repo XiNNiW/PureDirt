@@ -1,4 +1,5 @@
 #N canvas 280 102 1537 978 10;
+#X declare -path ./lib;
 #N canvas 0 100 1088 841 snare-synth~ 0;
 #X obj 155 38 *~;
 #X obj 138 -256 bng 60 250 50 0 play-drum empty empty 17 7 0 10 -262144
@@ -759,7 +760,7 @@
 #X obj 666 156 signal-to-db~;
 #X obj 727 186 signal-to-db~;
 #X obj 222 271 tgl 75 0 empty empty Start_Audio -17 -7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X msg 222 354 \; pd dsp \$1;
 #X connect 0 0 11 0;
 #X connect 1 0 11 0;
@@ -805,6 +806,7 @@
 #X obj 534 265 dirt-voice hh;
 #X obj 388 192 loadbang;
 #X msg 388 211 gain 1 0;
+#X obj 124 9 declare -path ./lib;
 #X connect 0 0 3 0;
 #X connect 1 0 0 0;
 #X connect 2 0 15 0;
