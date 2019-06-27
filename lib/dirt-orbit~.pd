@@ -1,5 +1,5 @@
 #N canvas 0 100 867 684 10;
-#X obj 150 138 dirt-param orbit;
+#X obj 150 99 dirt-param orbit;
 #X obj 125 165 makefilename orbit%sL;
 #X obj 261 164 makefilename orbit%sR;
 #X obj 125 184 list prepend set;
@@ -11,8 +11,8 @@
 #X obj 149 56 inlet;
 #X obj 22 243 throw~ orbit1L;
 #X obj 117 244 throw~ orbit1R;
-#X connect 0 0 1 0;
-#X connect 0 0 2 0;
+#X obj 167 136 + 1;
+#X connect 0 0 12 0;
 #X connect 1 0 3 0;
 #X connect 2 0 5 0;
 #X connect 3 0 4 0;
@@ -22,3 +22,5 @@
 #X connect 7 0 10 0;
 #X connect 8 0 11 0;
 #X connect 9 0 0 0;
+#X connect 12 0 1 0;
+#X connect 12 0 2 0;

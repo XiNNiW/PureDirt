@@ -2,11 +2,13 @@ d1 $ ghost $ s "bd bd . sn" #pF "overdrive" (10*rand)
 
 d1 $ whenmod 5 3 (ghost.slow 2.(#room (fast (1+ irand 8) $ "0.02 0.5"))) $ sometimes (#room 0.25) $ every 4 (rev) $ s "{bd*4,[~ hh]*4,[~ sn]*2}" #gain 1 #room 0.02
 
+d2 $ ghost $ note ("c3(<3 5>,8,<0 3>)" + "0 1 0 12 . -12 0 3 5") #s "bass"
+#orbit 1 #room 0.2 #pF "port" (range 0 100 $ rand)
+#pF "cutoff" (range 200 3000 $ rand) #pF "q" (range 0 2 $ rand)
+#gain 0.99
 
 
 d1 $ s "bd*32"
-
-:t fix
 
 setcps 1
 
