@@ -1,0 +1,11 @@
+#N canvas 508 316 846 591 10;
+#X obj 134 9 inlet;
+#X obj 99 153 outlet;
+#X obj 210 89 v cps;
+#X obj 134 32 t a b;
+#X obj 99 133 expr if($f2>0 \, 1000*($f1/$f2) \, 0);
+#X connect 0 0 3 0;
+#X connect 2 0 4 1;
+#X connect 3 0 4 0;
+#X connect 3 1 2 0;
+#X connect 4 0 1 0;
