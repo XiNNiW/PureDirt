@@ -1,0 +1,17 @@
+#N canvas 0 100 1069 896 10;
+#X obj 187 198 r cycle-pulse;
+#X obj 187 264 timer;
+#X obj 187 283 t a b;
+#X obj 213 309 v cps;
+#X obj 187 338 expr ($f1/1000)*$f2;
+#X obj 230 217 inlet;
+#X obj 230 236 b;
+#X obj 186 363 outlet;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 2 1 3 0;
+#X connect 3 0 4 1;
+#X connect 4 0 7 0;
+#X connect 5 0 6 0;
+#X connect 6 0 1 1;

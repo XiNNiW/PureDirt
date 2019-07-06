@@ -4,10 +4,10 @@
 #X obj 166 267 inlet;
 #X obj 166 380 outlet;
 #X obj 166 299 route \$1;
-#X obj 214 138 loadbang;
-#X obj 214 266 pack 0 0;
-#X obj 247 184 list \$2;
-#X obj 247 207 list trim;
+#X obj 214 188 loadbang;
+#X obj 214 258 pack 0 0;
+#X obj 214 211 list \$2;
+#X obj 214 234 list trim;
 #X connect 0 0 3 0;
 #X connect 1 0 0 0;
 #X connect 1 1 0 1;

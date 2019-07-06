@@ -1,4 +1,4 @@
-#N canvas 0 100 1920 980 10;
+#N canvas 171 217 1440 718 10;
 #X declare -path ./lib;
 #X declare -path ./synths;
 #X obj 13 9 pure-dirt;
@@ -50,7 +50,7 @@
 #X obj 666 156 signal-to-db~;
 #X obj 727 186 signal-to-db~;
 #X obj 222 271 tgl 75 0 empty empty Start_Audio -17 -7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X msg 222 354 \; pd dsp \$1;
 #N canvas 0 100 1344 879 delay~ 0;
 #X obj 104 318 outlet~;
@@ -154,43 +154,59 @@
 #X restore 12 30 pd dirt-mixer~;
 #X obj 124 9 declare -path ./lib;
 #X obj 294 9 declare -path ./synths;
-#X obj 630 288 dirt-orbit~, f 22;
-#X obj 500 288 dirt-orbit~, f 20;
-#X obj 399 289 dirt-orbit~, f 15;
-#X obj 293 288 dirt-orbit~, f 15;
-#X obj 195 288 dirt-orbit~, f 15;
-#X obj 629 244 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 621 288 dirt-orbit~, f 22;
+#X obj 495 288 dirt-orbit~, f 20;
+#X obj 209 288 dirt-orbit~, f 15;
+#X obj 15 288 dirt-orbit~, f 15;
+#X obj 112 288 dirt-orbit~, f 15;
+#X obj 620 244 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 630 264 analogue.supersaw~ pad;
-#X obj 500 264 analogue.bass~ bass, f 20;
-#X obj 499 244 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 495 264 analogue.bass~ bass, f 20;
+#X obj 494 244 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 399 244 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 209 243 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 399 264 analogue.hh~ hh;
-#X obj 294 245 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 209 263 analogue.hh~ hh;
+#X obj 16 245 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 16 265 analogue.bd~ bd;
+#X obj 112 245 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 294 265 analogue.bd~ bd;
-#X obj 194 245 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 112 265 analogue.sd~ sn;
+#X obj 764 287 dirt-orbit~, f 22;
+#X obj 763 243 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 195 265 analogue.sd~ sn;
-#X connect 9 0 10 0;
-#X connect 10 0 4 0;
-#X connect 10 1 4 1;
-#X connect 10 2 4 2;
-#X connect 11 0 5 0;
-#X connect 11 1 5 1;
-#X connect 11 2 5 2;
-#X connect 12 0 11 0;
-#X connect 13 0 14 0;
-#X connect 14 0 6 0;
-#X connect 14 1 6 1;
-#X connect 14 2 6 2;
-#X connect 15 0 16 0;
-#X connect 16 0 7 0;
-#X connect 16 1 7 1;
-#X connect 16 2 7 2;
-#X connect 17 0 18 0;
-#X connect 18 0 8 0;
-#X connect 18 1 8 1;
-#X connect 18 2 8 2;
+#X obj 621 264 analogue.supersaw~ pad;
+#X obj 764 263 fm.2op-par~ bell;
+#X obj 309 288 dirt-orbit~, f 15;
+#X obj 309 243 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 309 263 analogue.rc~ rc;
+#X connect 9 0 20 0;
+#X connect 10 0 5 0;
+#X connect 10 1 5 1;
+#X connect 10 2 5 2;
+#X connect 11 0 10 0;
+#X connect 12 0 13 0;
+#X connect 13 0 6 0;
+#X connect 13 1 6 1;
+#X connect 13 2 6 2;
+#X connect 14 0 15 0;
+#X connect 15 0 7 0;
+#X connect 15 1 7 1;
+#X connect 15 2 7 2;
+#X connect 16 0 17 0;
+#X connect 17 0 8 0;
+#X connect 17 1 8 1;
+#X connect 17 2 8 2;
+#X connect 19 0 21 0;
+#X connect 20 0 4 0;
+#X connect 20 1 4 1;
+#X connect 20 2 4 2;
+#X connect 21 0 18 0;
+#X connect 21 1 18 1;
+#X connect 21 2 18 2;
+#X connect 23 0 24 0;
+#X connect 24 0 22 0;
+#X connect 24 1 22 1;
+#X connect 24 2 22 2;
