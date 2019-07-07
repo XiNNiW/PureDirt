@@ -1,0 +1,16 @@
+#N canvas 1074 346 616 441 10;
+#X text 315 329 maximum bandlimited index;
+#X obj 136 357 expr~ $v1 * tanh($v2/$v1);
+#X text 295 358 scaled bandlimited index;
+#X obj 136 329 expr~ -($v1+$v2-16000)/2*$v2;
+#X obj 123 206 inlet~;
+#X obj 183 206 inlet~;
+#X obj 64 207 inlet~;
+#X text 114 144 inlets: fcarrier \, fmodulator \, index outlets: scaled
+index;
+#X obj 136 380 outlet~;
+#X connect 1 0 8 0;
+#X connect 3 0 1 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 1;
+#X connect 6 0 1 1;
