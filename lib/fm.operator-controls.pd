@@ -24,6 +24,7 @@
 #X obj 272 262 dirt-param \$1-decay \$6;
 #X obj 295 312 dirt-param \$1-sustain \$7;
 #X obj 316 334 dirt-param \$1-release \$8;
+#X obj 138 212 *~ 1000;
 #X connect 0 0 14 0;
 #X connect 1 0 11 0;
 #X connect 2 0 12 0;
@@ -41,9 +42,10 @@
 #X connect 17 0 15 1;
 #X connect 17 0 8 0;
 #X connect 18 0 17 1;
-#X connect 19 0 15 0;
+#X connect 19 0 25 0;
 #X connect 20 0 10 0;
 #X connect 21 0 1 0;
 #X connect 22 0 2 0;
 #X connect 23 0 13 0;
 #X connect 24 0 0 0;
+#X connect 25 0 15 0;

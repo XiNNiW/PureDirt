@@ -1,4 +1,4 @@
-#N canvas -42 197 1956 791 10;
+#N canvas 0 100 1890 980 10;
 #X declare -path ./lib;
 #X declare -path ./synths;
 #X obj 13 9 pure-dirt;
@@ -154,42 +154,70 @@
 #X restore 12 30 pd dirt-mixer~;
 #X obj 124 9 declare -path ./lib;
 #X obj 294 9 declare -path ./synths;
-#X obj 621 288 dirt-orbit~, f 22;
-#X obj 495 288 dirt-orbit~, f 20;
-#X obj 209 288 dirt-orbit~, f 15;
+#X obj 656 288 dirt-orbit~, f 22;
+#X obj 530 288 dirt-orbit~, f 20;
+#X obj 307 289 dirt-orbit~, f 15;
 #X obj 15 288 dirt-orbit~, f 15;
 #X obj 112 288 dirt-orbit~, f 15;
-#X obj 620 244 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 655 244 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 495 264 analogue.bass~ bass, f 20;
-#X obj 494 244 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 530 264 analogue.bass~ bass, f 20;
+#X obj 529 244 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 209 243 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 307 244 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 209 263 analogue.hh~ hh;
-#X obj 16 245 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 307 264 analogue.hh~ hh;
+#X obj 15 245 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 16 265 analogue.bd~ bd;
+#X obj 15 265 analogue.bd~ bd;
 #X obj 112 245 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 112 265 analogue.sd~ sn;
-#X obj 764 287 dirt-orbit~, f 22;
-#X obj 763 243 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 530 362 dirt-orbit~, f 22;
+#X obj 530 318 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 621 264 analogue.supersaw~ pad;
-#X obj 309 288 dirt-orbit~, f 15;
-#X obj 309 243 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 656 264 analogue.supersaw~ pad;
+#X obj 404 289 dirt-orbit~, f 15;
+#X obj 404 244 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 309 263 analogue.rc~ rc;
+#X obj 404 264 analogue.rc~ rc;
 #X obj 625 153 dirt-orbit~, f 22;
 #X obj 624 109 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 625 129 analogue.polysaw~ pad2;
-#X obj 764 263 fm.4op-par~ bell;
-#X obj 909 287 dirt-orbit~, f 22;
-#X obj 908 243 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 669 362 dirt-orbit~, f 22;
+#X obj 669 318 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 909 263 fm.4op-dyn~ bell2;
+#X obj 669 338 fm.4op-dyn~ bell2;
+#X obj 808 361 dirt-orbit~, f 22;
+#X obj 808 317 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 808 337 fm.4op-stat~ bell3;
+#X obj 209 288 dirt-orbit~, f 15;
+#X obj 209 245 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 209 265 analogue.rm~ rm;
+#X obj 530 338 fm.4op-par~ bell;
+#X obj 15 358 dirt-orbit~, f 15;
+#X obj 15 315 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 115 358 dirt-orbit~, f 15;
+#X obj 115 315 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 15 335 fm.bd~ bd2, f 15;
+#X obj 213 357 dirt-orbit~, f 15;
+#X obj 213 314 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 313 357 dirt-orbit~, f 15;
+#X obj 313 314 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 114 334 fm.sn~ sn2, f 15;
+#X obj 213 334 fm.sn~ rm2, f 15;
+#X obj 413 357 dirt-orbit~, f 15;
+#X obj 413 314 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 313 334 fm.hh~ hh2, f 15;
+#X obj 413 333 fm.rc~ rc2, f 15;
 #X connect 9 0 20 0;
 #X connect 10 0 5 0;
 #X connect 10 1 5 1;
@@ -207,7 +235,7 @@
 #X connect 17 0 8 0;
 #X connect 17 1 8 1;
 #X connect 17 2 8 2;
-#X connect 19 0 27 0;
+#X connect 19 0 36 0;
 #X connect 20 0 4 0;
 #X connect 20 1 4 1;
 #X connect 20 2 4 2;
@@ -219,10 +247,38 @@
 #X connect 26 0 24 0;
 #X connect 26 1 24 1;
 #X connect 26 2 24 2;
-#X connect 27 0 18 0;
-#X connect 27 1 18 1;
-#X connect 27 2 18 2;
-#X connect 29 0 30 0;
-#X connect 30 0 28 0;
-#X connect 30 1 28 1;
-#X connect 30 2 28 2;
+#X connect 28 0 29 0;
+#X connect 29 0 27 0;
+#X connect 29 1 27 1;
+#X connect 29 2 27 2;
+#X connect 31 0 32 0;
+#X connect 32 0 30 0;
+#X connect 32 1 30 1;
+#X connect 32 2 30 2;
+#X connect 34 0 35 0;
+#X connect 35 0 33 0;
+#X connect 35 1 33 1;
+#X connect 35 2 33 2;
+#X connect 36 0 18 0;
+#X connect 36 1 18 1;
+#X connect 36 2 18 2;
+#X connect 38 0 41 0;
+#X connect 40 0 46 0;
+#X connect 41 0 37 0;
+#X connect 41 1 37 1;
+#X connect 41 2 37 2;
+#X connect 43 0 47 0;
+#X connect 45 0 50 0;
+#X connect 46 0 39 0;
+#X connect 46 1 39 1;
+#X connect 46 2 39 2;
+#X connect 47 0 42 0;
+#X connect 47 1 42 1;
+#X connect 47 2 42 2;
+#X connect 49 0 51 0;
+#X connect 50 0 44 0;
+#X connect 50 1 44 1;
+#X connect 50 2 44 2;
+#X connect 51 0 48 0;
+#X connect 51 1 48 1;
+#X connect 51 2 48 2;
