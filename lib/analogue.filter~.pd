@@ -1,4 +1,4 @@
-#N canvas 950 100 960 980 10;
+#N canvas 0 100 1920 980 10;
 #X obj 38 758 bob~;
 #X obj 50 544 r \$0-messages;
 #X obj 61 590 r \$0-messages;
@@ -17,8 +17,8 @@
 #X obj 345 455 r \$0-duration;
 #X obj 38 273 inlet~;
 #X obj 38 785 outlet~;
-#X obj 998 194 inlet;
-#X obj 998 216 s \$0-messages;
+#X obj 302 277 inlet;
+#X obj 302 299 s \$0-messages;
 #X obj 212 271 inlet;
 #X obj 212 294 s \$0-gate;
 #X obj 61 610 dirt-param~ q \$2;

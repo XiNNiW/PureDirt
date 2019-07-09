@@ -8,7 +8,7 @@
 #X obj 214 258 pack 0 0;
 #X obj 214 211 list \$2;
 #X obj 214 234 list trim;
-#X obj 216 174 del 4;
+#X obj 216 174 del 10;
 #X connect 0 0 3 0;
 #X connect 1 0 0 0;
 #X connect 1 1 0 1;
